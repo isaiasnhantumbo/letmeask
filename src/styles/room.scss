@@ -13,6 +13,15 @@
             > img {
                 max-height: 45px;
             }
+
+            > div {
+                display: flex;
+                gap: 16px;
+
+                button {
+                    height: 40px;
+                }
+            }
         }
     }
 
@@ -30,7 +39,7 @@
                 color: #29292e;
             }
 
-            span{
+            span {
                 margin-left: 16px;
                 background: #e559f9;
                 border-radius: 9999px;
@@ -41,8 +50,8 @@
             }
         }
 
-        form{
-            textarea{
+        form {
+            textarea {
                 width: 100%;
                 border: 0;
                 padding: 16px;
@@ -53,23 +62,23 @@
                 min-height: 130px;
             }
 
-            .form-footer{
+            .form-footer {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 margin-top: 16px;
 
-                .user-info{
+                .user-info {
                     display: flex;
                     align-items: center;
 
-                    img{
+                    img {
                         width: 32px;
                         height: 32px;
                         border-radius: 50%;
                     }
 
-                    span{
+                    span {
                         margin-left: 8px;
                         color: #29292e;
                         font-weight: 500;
@@ -77,12 +86,12 @@
                     }
                 }
 
-                > span{
+                > span {
                     font-size: 14px;
                     color: #737380;
                     font-weight: 500;
 
-                    button{
+                    button {
                         background: transparent;
                         border: 0;
                         color: #835afd;
@@ -93,6 +102,10 @@
                     }
                 }
             }
+        }
+
+        .question-list {
+            margin-top: 32px;
         }
     }
 }
