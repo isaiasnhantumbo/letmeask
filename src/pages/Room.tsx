@@ -1,5 +1,6 @@
 import { FormEvent, Fragment, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import {  useParams } from 'react-router-dom';
+import { Toaster, toast } from 'react-hot-toast';
 import logoImg from '../assets/images/logo.svg';
 import { Button } from '../components/Button';
 import { Question } from '../components/Question';
@@ -17,6 +18,7 @@ type RoomParams = {
 export function Room() {
   const { user } = useAuth();
   const params = useParams<RoomParams>();
+
   const [newQuestion, setNewQuestion] = useState('');
   const roomId = params.id;
   const { questions, title } = useRoom(roomId);
@@ -28,14 +30,13 @@ export function Room() {
       return;
     }
     if (!user) {
-      // TODO:REACT HOT TOAST PARA IMPLEMENTAR OS ERROS
-      throw new Error('You must be logged in');
+      toast.error('You must be logged in');
     }
     const question = {
       content: newQuestion,
       author: {
-        name: user.name,
-        avatar: user.avatar,
+        name: user?.name,
+        avatar: user?.avatar,
       },
       isHighlighted: false,
       isAnswered: false,
@@ -66,7 +67,12 @@ export function Room() {
       <header>
         <div className="content">
           <img src={logoImg} alt="Letmeask" />
-          <RoomCode code={roomId} />
+          <div>
+            <RoomCode code={roomId} />
+            <Button isOutlined>
+              <a href={`/admin/rooms/${roomId}`}>Modo Administrador</a>
+            </Button>
+          </div>
         </div>
       </header>
 
@@ -144,6 +150,7 @@ export function Room() {
               </Fragment>
             );
           })}
+          <Toaster />
         </div>
       </main>
     </div>

@@ -31,6 +31,7 @@ export function AdminRoom() {
     });
 
     history.push('/');
+    
   }
 
   async function handleDeleteQuestion(questionId: string) {

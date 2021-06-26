@@ -1,5 +1,6 @@
 import { useHistory } from 'react-router-dom';
 import { useAuth } from '../hooks/useAuth';
+import  {Toaster, toast} from 'react-hot-toast'
 
 import illustrationImg from '../assets/images/illustration.svg';
 import logoImg from '../assets/images/logo.svg';
@@ -21,6 +22,7 @@ export function Home() {
       await signInWithGoogle();
     }
     history.push('/rooms/new');
+    toast.success('Sala criada com sucesso')
   }
 
   async function handleJoinRoom(event: FormEvent) {
@@ -33,12 +35,12 @@ export function Home() {
     const roomRef = await database.ref(`rooms/${roomCode}`).get();
 
     if (!roomRef.exists()) {
-      alert('Room does not exists.');
+      toast.error('A sala que você deseja acessar não existe')
       return;
     }
 
     if(roomRef.val().endedAt){
-      alert('Room already closed');
+      toast.error('A sala que você deseja acessar foi encerrada');
       return;
     }
 
@@ -46,6 +48,10 @@ export function Home() {
   }
 
   return (
+    <>
+    <div>
+      <Toaster/>
+    </div>
     <div id="page-auth">
       <aside>
         <img
@@ -75,5 +81,6 @@ export function Home() {
         </div>
       </main>
     </div>
+    </>
   );
 }

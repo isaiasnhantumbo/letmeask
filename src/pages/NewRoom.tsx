@@ -1,6 +1,6 @@
 import { Link,useHistory } from 'react-router-dom';
 import { useAuth } from '../hooks/useAuth';
-
+import  {Toaster, toast} from 'react-hot-toast'
 import illustrationImg from '../assets/images/illustration.svg';
 import logoImg from '../assets/images/logo.svg';
 
@@ -32,9 +32,13 @@ export function NewRoom() {
     })
 
     history.push(`/rooms/${firebaseRoom.key}`)
+    toast.success('Sala criada com sucesso')
+    
   }
 
   return (
+    <>
+    <div><Toaster/></div>
     <div id="page-auth">
       <aside>
         <img
@@ -64,5 +68,6 @@ export function NewRoom() {
         </div>
       </main>
     </div>
+    </>
   );
 }
