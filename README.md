@@ -1,46 +1,119 @@
-# Getting Started with Create React App
+<br/>
+<p align="center">
+    <img src ="./src/assets/images/logo.svg" width="400" > 
+</p>
+<h2 align="center"> 
+<img src="https://img.shields.io/badge/Status-Termidado-green">
+</h2>
+<br>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Índice
+   * [Descrição do Projecto](#descrição-do-projecto)
+   * [Features](#-features)
+   * [Tecnologias usadas](#-tecnologias-usadas)
+   * [Desafios do Projecto](#-desafios-do-projecto)
+   * [Pré-requisitos](#-pré-requisitos)
+   * [Rodando o projecto na sua maquina](#-rodando-o-projecto-na-sua-maquina-iniciando-o-servidor)
+   * [Licença](#-licença)
 
-## Available Scripts
 
-In the project directory, you can run:
+## 📖 Descrição do Projecto
 
-### `yarn start`
+<p align="center">
+Letmeask é um aplicativo para criar salas de perguntas e respostas o <strong>Letmeask</strong> pode ser o usado para auxiliar numa live, o usuário poderá criar uma sala e compartilhar o código dela para outros para entrarem e fazer as suas perguntas.
+</p>
+<h1 align="center"><a target="_blank" href="https://moveit-nu.vercel.app/">Acessar Demonstração</a></h1>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## ✅ Features
+  - [x] Fazer login com o Google
+  - [x] Criar sala
+  - [x] Compartilhar código da sala
+  - [x] Destacar a pergunta que esta a ser a respondida
+  - [x] Eliminar pergunta
+  - [x] Encerrar sala
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p align="center">
+  <!-- <img src = "http://i.imgur.com/0iorG20.png" width=700> -->
+</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
+## 🛠 Tecnologias usadas
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+As seguintes ferramentas foram usadas na construção do projeto:
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- SASS
+- ReactJs
+- Typescript
+- React Router Dom 
+- ContextApi
+- Hooks
+- Firebase Realtime Database
+- Firebase Authentication
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## ⛈  Desafios do projecto
+  - [ ] Responsividade
+ 
+  ---
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
+## ⚠ Pré-requisitos
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
+## 🎲 Rodando o projecto na sua maquina (iniciando o live server)
+
+```bash
+# Clone este repositório
+$ git clone <https://github.com/isaiasnhantumbo/letmeask.git>
+
+# Acesse a pasta do projeto no terminal/cmd
+$ cd letmeask
+
+# Abra a pasta no Visual Studio Code
+$ code .
+
+# Instale as dependência
+$ yarn install
+
+# Execute a aplicação com o yarn
+$ yarn start
+
+# O servidor inciará na porta:3000 - acesse <http://localhost:3000>
+```
+
+---
+
+
+## 📘 Licença
+Este projecto usa a  [MIT License](LICENSE).
+****
+<h1 align="center">
+👨🏽‍🏫 
+<br>
+Desenvolvido por
+<br>
+ Isaias Nhantumbo Junior
+</h1>
+</p>
+<h1 align="center"> 🤝 &nbsp;Vamos nos conectar ?👨 </h1>
+
+<p align="center">
+<a href="https://www.youtube.com/channel/UCOyeYkH0MwJ6RrXTcEFFdAQ?view_as=subscriber"><img alt="Youtube" src="https://img.shields.io/badge/Channel-Isaias_Inside-blue?style=flat-square&logo=youtube"></a>
+<a href="https://www.linkedin.com/in/isaias-nhantumbo-junior-733bb619b/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Isaias%20Nhantumbo%20Junior-green?style=flat-square&logo=linkedin"></a>
+<a href="https://www.instagram.com/isaias_nhantumbo/"><img alt="Instagram" src="https://img.shields.io/badge/Instagram-isaiasnhantumbo_-blue??style=for-the-badge&logo=instagram"></a>
+</p>
+
+
+
+
