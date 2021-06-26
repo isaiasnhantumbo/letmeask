@@ -2,6 +2,9 @@
 <p align="center">
     <img src ="./src/assets/images/logo.svg" width="400" > 
 </p>
+<p align="center">
+    <img src ="./.github/assets/print.jpg" > 
+</p>
 <h2 align="center"> 
 <img src="https://img.shields.io/badge/Status-Termidado-green">
 </h2>
@@ -22,7 +25,10 @@
 <p align="center">
 Letmeask é um aplicativo para criar salas de perguntas e respostas o <strong>Letmeask</strong> pode ser o usado para auxiliar numa live, o usuário poderá criar uma sala e compartilhar o código dela para outros para entrarem e fazer as suas perguntas.
 </p>
-<h1 align="center"><a target="_blank" href="https://moveit-nu.vercel.app/">Acessar Demonstração</a></h1>
+<p align="center">
+    <img src ="./.github/assets/ezgif.gif" > 
+</p>
+<h1 align="center"><a target="_blank" href="https://letmeask-3fc59.web.app/">Acessar Demonstração</a></h1>
 
 ## ✅ Features
   - [x] Fazer login com o Google
@@ -50,6 +56,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - ReactJs
 - Typescript
 - React Router Dom 
+- React Hot Toast
 - ContextApi
 - Hooks
 - Firebase Realtime Database
@@ -58,9 +65,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ---
 
 ## ⛈  Desafios do projecto
-  - [ ] Responsividade
+  - [x] Responsividade
  
-  ---
 
 ---
 
