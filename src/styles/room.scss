@@ -1,52 +1,56 @@
 #page-room {
     header {
-        padding: 24px;
+        padding: 1.5rem;
         border-bottom: 1px solid #e2e2e2;
 
         .content {
-            max-width: 1120px;
+            max-width: 70rem;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
 
             > img {
-                max-height: 45px;
+                max-height: 2.8125rem;
             }
 
             > div {
                 display: flex;
-                gap: 16px;
+                gap: 1rem;
 
                 button {
-                    height: 40px;
+                    height: 2.5rem;
+                    a{
+                        text-decoration: none;
+                        color: #835afd;
+                    }
                 }
             }
         }
     }
 
     main {
-        max-width: 800px;
+        max-width: 50rem;
         margin: 0 auto;
         .room-title {
-            margin: 32px 0 24px;
+            margin: 2rem 0 1.5rem;
             display: flex;
             align-items: center;
 
             h1 {
-                font-size: 24px;
+                font-size: 1.5rem;
                 font-family: "Poppins", sans-serif;
                 color: #29292e;
             }
 
             span {
-                margin-left: 16px;
+                margin-left: 1rem;
                 background: #e559f9;
                 border-radius: 9999px;
-                padding: 8px 16px;
+                padding: 0.5rem 1rem;
                 color: #fff;
                 font-weight: 500;
-                font-size: 14px;
+                font-size: 0.875rem;
             }
         }
 
@@ -105,7 +109,23 @@
         }
 
         .question-list {
-            margin-top: 32px;
+            margin-top: 2rem;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    #page-room{
+        
+        .content {
+            flex-direction: column;
+            > div {
+               flex-direction: column;
+            }
+        }
+        .form-footer{
+            flex-direction: column;
+            gap: 1.625rem;
         }
     }
 }
